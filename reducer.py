@@ -11,22 +11,15 @@ for line in sys.stdin:
     line = line.split("\t")
     nome, salario = line[0].split(",")
     salario = Decimal(salario)
-    print(salario)
-    # print(highest_icomes)
-    # Convert the count to an int
-    # count = int(count)
-    # If the current word is the same as the previous word,
-    # increment its count, otherwise print the words count
-    # to stdout
-#   if word == curr_word:
-#     curr_count += count
-#   else:
-#     # Write word and its number of occurrences as a key-value
-#     # pair to stdout
-#     if curr_word:
-#       print ('{0}\t{1}'.format(curr_word, curr_count))
-#     curr_word = word
-#     curr_count = count
-# # Output the count for the last word
-# if curr_word == word:
-#   print ('{0}\t{1}'.format(curr_word, curr_count))
+
+    if(len(highest_incomes) < 11):
+      highest_incomes.append((nome, salario))
+
+    else:
+      highest_incomes.append((nome, salario))
+      highest_incomes = sorted(highest_incomes, key = lambda x: x[1], reverse=True)
+      highest_incomes.pop()
+
+      
+
+print(highest_incomes[:-1])
