@@ -3,7 +3,7 @@
 This practice is about programming map/reduce functions in some datasets to be processed at a Hadoop cluster using Yarn.
 
 ## Requirements:
-. The setup for this tasks using docker can be found in [this link](git@github.com:cmdviegas/docker-hadoop-cluster.git).
+. The setup for this tasks using docker can be found in [this link](https://github.com/cmdviegas/docker-hadoop-cluster).
 . Complete the tasks below developing the provided scripts
 ## Tasks
 1. Get the 10 highest incomes
