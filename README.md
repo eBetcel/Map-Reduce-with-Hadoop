@@ -3,7 +3,7 @@
 This practice is about programming map/reduce functions in some datasets to be processed at a Hadoop cluster using Yarn.
 
 ## Requirements:
-. Installing Apache Hadoop with at least 2 nodes
+. The setup for this tasks using docker can be found in [this link](git@github.com:cmdviegas/docker-hadoop-cluster.git).
 . Complete the tasks below developing the provided scripts
 ## Tasks
 1. Get the 10 highest incomes
@@ -15,3 +15,5 @@ This practice is about programming map/reduce functions in some datasets to be p
 3. Calculate stats from users that accessed the e-mail service
 * Download the e-mail [weblog file](https://goo.gl/A3MhFS) (dovecot.log)
 * Output: A list with all the user names and how many times they tried to access the mail service, but only the ones with more than 100 entries
+
+
